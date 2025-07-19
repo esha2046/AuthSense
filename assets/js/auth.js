@@ -5,7 +5,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
   if (user === "admin" && pass === "admin123") {
     sessionStorage.setItem("session_id", Date.now());
-    window.location.href = "dashboard.html";
+    window.location.href = "/dashboard.html";
   } else {
     alert("Invalid credentials");
   }
